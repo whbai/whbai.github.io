@@ -30,14 +30,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/link/</loc>
+    <loc>http://example.com/tags/</loc>
     
     <lastmod>2021-04-26</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/tags/</loc>
+    <loc>http://example.com/link/</loc>
     
     <lastmod>2021-04-26</lastmod>
     
@@ -46,7 +46,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-06-06</lastmod>
+    <lastmod>2021-06-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
