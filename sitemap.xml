@@ -30,14 +30,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/</loc>
+    <loc>http://example.com/link/</loc>
     
     <lastmod>2021-04-26</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/link/</loc>
+    <loc>http://example.com/tags/</loc>
     
     <lastmod>2021-04-26</lastmod>
     
