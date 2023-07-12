@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yuuu.org/post/16107.html</loc>
+    
+    <lastmod>2023-07-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yuuu.org/post/19178.html</loc>
     
     <lastmod>2023-07-12</lastmod>
@@ -11,27 +20,9 @@
   </url>
   
   <url>
-    <loc>https://yuuu.org/post/16107.html</loc>
+    <loc>https://yuuu.org/about/index.html</loc>
     
-    <lastmod>2023-07-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yuuu.org/links/index.html</loc>
-    
-    <lastmod>2023-07-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yuuu.org/tags/index.html</loc>
-    
-    <lastmod>2023-07-11</lastmod>
+    <lastmod>2023-07-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,16 +31,25 @@
   <url>
     <loc>https://yuuu.org/categories/index.html</loc>
     
-    <lastmod>2023-07-11</lastmod>
+    <lastmod>2023-07-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://yuuu.org/about/index.html</loc>
+    <loc>https://yuuu.org/links/index.html</loc>
     
-    <lastmod>2023-07-11</lastmod>
+    <lastmod>2023-07-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yuuu.org/tags/index.html</loc>
+    
+    <lastmod>2023-07-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
