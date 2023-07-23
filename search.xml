@@ -3,8 +3,16 @@
   <entry>
     <title>1. Hello World</title>
     <url>/post/16107.html</url>
-    <content><![CDATA[<p>你好，欢迎造访，陌生人&#x2F;朋友们。这是这个博客的第一篇文章，是我旅途的开始。千里之行，始于足下.</p>
+    <content><![CDATA[<p>你好，欢迎造访，陌生人&#x2F;朋友们。这是这个博客的第一篇文章，是我旅途的开始。千里之行，始于足下，既然是出发点，当然要好好记录一下。<span id="more"></span></p>
+<h2 id="为什么写博客？"><a href="#为什么写博客？" class="headerlink" title="为什么写博客？"></a>为什么写博客？</h2><p>我想，最开始做博客的动机，大概都是源自于羡慕，羡慕其他的个人博客。最开始接触到博客，是在 2019 年前后，那时候看到各个博主自己搭建的博客，样式多样，很多布局和设计我都从来没有看过。对于当时只看过各大互联网平台网页的我来说，无疑是冲击巨大的。<br>自然而然，我也希望自己可以搭建一个博客。在当时，因为有着众多成熟的博客程序，我也没费什么功夫就搭建好了博客。可是我却陷入了「换主题」「换博客程序」「魔改」的漩涡，最后花费了大量时间在这方面，看着自己的博客越来越「好看」，但是内容却是缺失的，我最后还是放弃了博客，最终都以不了了之收场。<br>过了几年之后，我感觉现在的我应该可以驾驭「博客」这两个字了。于是，我重新建立了博客，也就是现在你看到的这个博客。</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>我有很严重的修改癌，喜欢修改文章、删除文章。毕竟我心境每时每刻都在变化，而我在不同时间也对应着不同的自己，看到同一段文字的时候，也经常会不满意早些时候写下的文字，会经常加以修改。倘若你发现一些文章与之前看到的不一样，或者干脆就404了，不必担心，这是常有现象🤪。</p>
 ]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+      </tags>
   </entry>
   <entry>
     <title>2. 多抓鱼之旅，买一本二手书</title>
@@ -24,6 +32,9 @@
 </ol>
 <p><img src="https://cdn.yuuu.org/post-img/2/2.webp" alt="书页"><br><img src="https://cdn.yuuu.org/post-img/2/3.webp" alt="正面"><br><img src="https://cdn.yuuu.org/post-img/2/4.webp" alt="圈画"></p>
 ]]></content>
+      <categories>
+        <category>经历</category>
+      </categories>
       <tags>
         <tag>经历</tag>
       </tags>
@@ -80,12 +91,15 @@
 <h3 id="数学计算"><a href="#数学计算" class="headerlink" title="数学计算"></a>数学计算</h3><p>计算这个方面实在是有太多的东西可以讲了，而且也包括了更复杂的函数运算，乘阶、三角函数、方差等等，甚至可以支持通过 Unicode 编码输入字符。我自认为自己对这一块认知尚少，这一部分实在是没法写出什么有价值的东西，暂时放弃。<br>更多的可以看看搜狗这边的说明<a href="https://pinyin.sogou.com/help.php?p=vmodel&f=shuxing">V 模式</a></p>
 <h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>写到这里，又有谁还记得我最开始只是想去了解一下如何输入「」与『』符号呢？🤣🤣🤣</p>
 ]]></content>
+      <categories>
+        <category>探索</category>
+      </categories>
       <tags>
         <tag>探索</tag>
       </tags>
   </entry>
   <entry>
-    <title>4. 折腾一下自定义鼠标样式</title>
+    <title>4. 折腾一下自定义光标</title>
     <url>/post/8804.html</url>
     <content><![CDATA[<p>今天心血来潮，又想折腾一下博客样式，这次是对鼠标样式进行自定义修改。<span id="more"></span></p>
 <h2 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h2><p>CSS cursor 属性允许我们定义鼠标指针放在一个元素边界范围内时所用的光标形状。同时，curosor中也允许我们使用url来引入自定义的光标。于是，我们就可以使用 curosr 来引入 自定义光标，再用css将一个元素的光标定义为我们需要的自定义光标。<br>最基本的代码就这样。</p>
@@ -108,12 +122,39 @@
 <p>至此，在twikoo中的元素的光标全部都被转换为了我当前自定义的光标。🎉🥳🎊</p>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>我使用了星奈铃的鼠标指针 <a href="https://www.bilibili.com/video/BV16f4y1o7AD/">bilibili</a></p>
 <p>原文件为ani文件，目前各大浏览器内核好像都不算很支持，于是我使用了<a href="http://www.rw-designer.com/cursor-maker">RealWorld Cursor Editor</a>从中抽取了一帧作为cur文件。但是也不知道出了什么差错，居然上传后居然没法正常的引入，在线预览变成了乱码，但是下载到本地却又正常。于是只好重新生成png格式上传，这才可以在线预览并且成功引入，目前暂时不知道是什么原因。一般是使用cur文件作为网站光标文件，大家别被我误解用了png做光标。<br>目前用着png作为光标，强迫症犯了，很难受。😑</p>
+<p>还有一些念念碎。我的原则事简洁之上，但这样子美化好像有点违背原则。我有一点点想用一个灰蒙蒙的圆圈来做光标，这样一定很酷。🤣</p>
 ]]></content>
       <categories>
         <category>探索</category>
       </categories>
       <tags>
         <tag>探索</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>5. 赛后总结，git不区分大小写</title>
+    <url>/post/19027.html</url>
+    <content><![CDATA[<p>我在换光标的时候，出现了一个差错，实在是太过于憋屈，不得不写一篇文章来提醒自己。<span id="more"></span></p>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>在<a href="https://yuuu.org/post/8804.html">折腾一下自定义光标</a>中，我说了一下关于我如何修改网站图标的方法。在当时，我准备好了光标文件，并且上传到了GitHub，并试图在网站中引入该文件，但是却发现无法引入。一番检查后发现，我错误的将文件命名为Link并且上传到了GitHub，而我在网站中输入的URL中的文件名却是link，这就导致了网址错误，没法指向文件。于是我将Link重命名为link，使用”git add .”重新提交到git，结果它直接提示我如下文所示。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">On branch master</span><br><span class="line">Your branch is up to date with &#x27;origin/master&#x27;.</span><br><span class="line"></span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure>
+
+<p>“没有可以提交的，工作树是干净的。”<br>可是我有修改文件名耶！<br>不管怎么改，我就是没办法让git识别到我改了名字，最后一气之下直接将文件删除后提交，再把重命名好的文件拉回来再提交，这样子才算是更新了Github上的文件。</p>
+<p>把这个文件名字处理完后，我又想出了一个办法，用<code>git mv  link.png link.png</code>来重命名文件，在本地证实Git可以识别出这个文件被重命名了，然后我试着复现情况：Github上有Link和其他文件，本地的Link文件通过git mv指令重命名，并且被git识别，同时修改部分文件。提交后，Github却对于重命名的link不予理睬，只是修改了其他文件。</p>
+<p>也就是说，哪怕是在本地Git上重命名了文件，Github还是不会把这个文件更新。</p>
+<p>我问了一番才知道，Git可以开关区分大小写功能。具体检查代码为<br><code>git config core.ignorecase</code><br>如果该命令返回<code>true</code>，则表示Git在文件名上不区分大小写。如果返回<code>false</code>或未设置该参数，则表示Git在文件名上区分大小写。而我的返回当然是<code>true</code>，这便是祸端的开始。<br>这件事之后，我当然希望Git区分大小写。不过凡事都有两面性，如果区分大小写好的话，为什么Git不会默认开启呢。在此之前，我还是先问了一下New Bing，它轻飘飘的说了一段话</p>
+<blockquote>
+<p>Git本身是区分大小写的，但它也可以在不区分大小写的文件系统上运行。在这种情况下，Git有一个配置选项<code>core.ignorecase</code>，用于告诉它是否应该忽略文件名的大小写。默认情况下，当Git在不区分大小写的文件系统上运行时，此选项将设置为<code>true</code>。</p>
+<p>是否区分大小写取决于您的需求和使用场景。如果您希望能够识别仅更改了文件名大小写的更改，那么您可能希望Git能够区分大小写。但是，在不区分大小写的文件系统上强制Git区分大小写可能会导致一些问题。例如，如果您仅更改了文件名的大小写，那么Git可能会报告虚假冲突或创建重复文件。</p>
+<p>总之，如果您在不区分大小写的文件系统上使用Git，那么最好让Git保持默认配置（即不区分大小写）。如果您在区分大小写的文件系统上使用Git，则可以根据需要配置Git来区分或不区分大小写。</p>
+</blockquote>
+<p>正巧的是，windows就是属于这一类不区分大小写的系统，按照bing的话，开了区分大小写的Git可能会导致更多的错误。既然如此，多一事不如少一事，我觉得最合适的方法还是从自身开始，减少自己的命名错误。<br><img src="https://cdn.yuuu.org/post-img/5/1.gif" alt="1"><br>上图是windows不区分大小写的一个例子，当目录存在”Link”文件的时候，再重命名一个”link”便会报错。这个特性，我现在才知道。</p>
+<h2 id="后知后觉"><a href="#后知后觉" class="headerlink" title="后知后觉"></a>后知后觉</h2><p>写完上文我才想起，可以回滚版本来得到一个未提交Link的版本，这样就不用迭两个版本号来更新文件了。但是考虑到这个仓库又连带着npm自动部署，当我提交文件之后，便会自动开始发布npm包，而npm包无法被编辑，只可以通过递增版本的方式来进行更改，也就是，哪怕是通过回滚的方式来刷新提交记录，npm也会上传我这一次错误的提交，不过也无所谓了，反正现在解决了。</p>
+]]></content>
+      <categories>
+        <category>踩坑</category>
+      </categories>
+      <tags>
+        <tag>踩坑</tag>
       </tags>
   </entry>
 </search>
