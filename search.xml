@@ -230,7 +230,7 @@
   <entry>
     <title>7. ubuntu 显卡安装小记</title>
     <url>/post/54849.html</url>
-    <content><![CDATA[<p>近日想在 ubuntu 上录一个屏，于是我安装了 obs，但是打开后才发现屏幕捕捉只是黑屏一片，只有一个鼠标可以显示。上网搜索一番在知道，大概是 ubuntu 的自带的显卡驱动 nouveau 的问题。<span id="more"></span>所以最好的解决方法大概就是安装英伟达显卡的驱动。以我在 windows 上的操作逻辑，我当然是直接在软件与更新里面寻找显卡驱动，然后直接更新。这就是悲剧的开始，最开始是在 ubuntu 中的软件和更新中直接更新的，其中选择了图中的「NVIDIA Server Driver metapackage 来自 nvidia-driver-535-server (专有)」。<br>安装完成后，它要求重启来完成安装。可当重启后，却是只显示几行代码。我不懂’SGX’和’ucsi-ccg’是什么意思，但是看到 nvidia-gpu 和 error 的时候，我大概明白，应该是安装出的问题：英伟达显卡超时错误。<br><img src="https://cdn.yuuu.org/post-img/7/1.webp" alt="1"><br>我尝试着用 alt + ctrl + f1 进入 tty1 虚拟控制台，但是毫无反应，重复用 alt + ctrl + f1/2/3/4/5/6 来试图进入 tty1/2/3/4/5/6，偶有几次成功，但是却会在数秒后无征兆退回。几番尝试全都无果告终，重启好几次都只是卡在以上的界面。<br>网络上的解决教程几乎都是围绕着进入命令行开始修复的，却没有像我这般卡死在「外边」的。<br>但是，我手里留有一个安装 ubuntu 的 u 盘。里面还有 ubuntu 的镜像。通过可以 live usb 中 try ubuntu 可以试用其中的 ubuntu 系统，虽然应该是一个最小安装的系统，但是也不妨碍我们用它来救救火。</p>
+    <content><![CDATA[<p>近日想在 ubuntu 上录一个屏，于是我安装了 obs，但是打开后才发现屏幕捕捉只是黑屏一片，只有一个鼠标可以显示。上网搜索一番在知道，大概是 ubuntu 的自带的显卡驱动 nouveau 的问题。<span id="more"></span>所以最好的解决方法大概就是安装英伟达显卡的驱动。以我在 windows 上的操作逻辑，当然是直接在可视化界面中的「软件与更新」里面寻找显卡驱动，然后直接更新，可这就是悲剧的开始。在 ubuntu 中的「软件和更新」中选择了图中的「NVIDIA Server Driver metapackage 来自 nvidia-driver-535-server (专有)」进行更新。安装完成后，它要求重启来完成安装。可当重启后，却是只显示几行代码。我不懂’SGX’和’ucsi-ccg’是什么意思，但是看到 nvidia-gpu 和 error 的时候，我大概明白，应该是安装出的问题：英伟达显卡超时错误。<br><img src="https://cdn.yuuu.org/post-img/7/1.webp" alt="1"><br>我尝试着用 alt + ctrl + f1 进入 tty1 虚拟控制台，但是毫无反应，重复用 alt + ctrl + f1/2/3/4/5/6 来试图进入 tty1/2/3/4/5/6，偶有几次成功，但是却会在数秒后无征兆退回最初的错误页面。几番尝试全都无果告终，重启好几次都只是卡在以上的界面。<br>网络上的解决教程几乎都是围绕着进入命令行开始修复的，却没有像我这般卡死在「外边」的。<br>但是，我手里留有一个安装 ubuntu 的 u 盘。里面还有 ubuntu 的镜像。通过可以 live usb 中 try ubuntu 可以试用其中的 ubuntu 系统，虽然应该是一个最小安装的系统，但是也不妨碍我们用它来救救火。</p>
 <h2 id="修复驱动"><a href="#修复驱动" class="headerlink" title="修复驱动"></a>修复驱动</h2><p>插入 u 盘，选择该 u 盘并启动其中的 ubuntu 镜像。在最开始的页面中选择「试用 ubuntu」进入 ubuntu 系统。</p>
 <p>接下来，打开终端，开始挂载安装本机中安装了 ubuntu 的硬盘。在此之前，先确定安装 ubuntu 的盘在哪个物理磁盘上。用 <code>parted</code> 指令或者 <code>fdisk</code> 均可。我电脑有两块 128GB 的 SSD 硬盘，有点容易搞混，parted 可以显示硬盘名字，增加区分度。</p>
 <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo fdisk -l</span><br><span class="line"><span class="comment"># 如果用fdisk还是不知道在哪个盘试试下面这个parted</span></span><br><span class="line">sudo parted -l</span><br></pre></td></tr></tbody></table></figure>
@@ -291,7 +291,7 @@
 <blockquote>
 <p>在 Linux 系统启动时，initramfs 是一个非常小的文件系统，它包含了一些基本的工具、驱动程序和文件，用于在正式的根文件系统被挂载之前进行初始化和准备工作。它的主要目的是为了确保系统能够正确地启动并加载所需的驱动程序和文件系统。<br>initramfs 中包含了用于加载真正的根文件系统所需的驱动程序、模块、配置文件和其他必要的工具。它允许系统在启动过程中进行硬件检测、初始化设备、加载必要的驱动程序和模块，以及解决其他启动过程中可能遇到的问题。<br>一旦 initramfs 完成了启动过程中的初始化和准备工作，它会将控制权转交给真正的根文件系统，然后真正的根文件系统会被挂载到系统上，从而完成整个启动过程。</p>
 </blockquote>
-<p>重启后看看是否可以进入系统，此时点入「软件与更新」会提示说我们在使用备用驱动，下图是安装好的情况大家看着知道就好。<br><img src="https://cdn.yuuu.org/post-img/7/3.webp" alt="3"></p>
+<p>重启后看看是否可以进入系统，此时进入「软件与更新」，则会提示说我们在使用备用驱动。<br><img src="https://cdn.yuuu.org/post-img/7/3.webp" alt="3"></p>
 <h3 id="开始安装驱动"><a href="#开始安装驱动" class="headerlink" title="开始安装驱动"></a>开始安装驱动</h3><p>接下来就是进入命令行了。可以使用 <code>sudo telinit 3</code> 和 <code>init 3</code> 在 Linux 系统中切换运行级别（也称为运行模式）， 他们的效果是一样的。</p>
 <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">sudo init 3</span><br><span class="line"><span class="comment"># or</span></span><br><span class="line">sudo telinit 3</span><br></pre></td></tr></tbody></table></figure>
 
