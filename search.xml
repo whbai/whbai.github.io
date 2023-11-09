@@ -15,6 +15,35 @@
       </tags>
   </entry>
   <entry>
+    <title>购入一台笔记本</title>
+    <url>/post/37582.html</url>
+    <content><![CDATA[<p>前段时间，购入了一个机械革命无界 pro 的笔记本，现在来谈谈使用体验<span id="more"></span></p>
+<h2 id="总评和外观"><a href="#总评和外观" class="headerlink" title="总评和外观"></a>总评和外观</h2><p>之前一直在用平板当做平时的主力机器（？），后来迫于安卓端实在是搭建不了一套符合我使用的体系，于是下单购买了机械革命的无界 14pro。7840hs 的处理器、以及可更换内存、双硬盘位、价格便宜，它把不太可能一起出现的字眼都集中于一身，我可以断言这就是今年最强的轻薄本之一。</p>
+<p>比较可惜的就是只有 14 寸的型号，写代码的时候总是嫌屏幕太小，写着写着就出屏幕外了。而且，我为了拥有更多的桌面空间，只能将笔记本支在显示器支架上放在桌子最里面，屏幕和人的距离可以拉开到 70 + 公分，这时候高分辨率小屏幕的缺点就来了，字好小…</p>
+<p>不过，14 寸也有好处，笔记本加上内胆包后依旧可以放进包里，不会有诸如 16 寸无法放进一些小的背包里的窘况。<del>小小的也很可爱？如果有粉色就更好了！</del></p>
+<p>外观整体金属感很强，暗银色，但是很容易留痕迹，整体刚度还算不错，机械革命的 logo 居然在边边，颇有一点 thinkpad 的感觉。</p>
+<p>自我开始使用这台笔记本开始，我还未发现处理器占用会有 100% 的时候，而家中那台 i3-9100 老爷机动不动就占用 100%。现在的处理器的性能居然已经这么高了吗？照这么想，那么，7940hs 或者 14900ks 性能岂不是炸裂？🤨</p>
+<p>如果硬要说一个我最没法忽视的点的话，那就是这块机器的屏幕。对于之前一直用平板办公的我来说，这块屏幕实在是不够「细腻」，虽然用平板和笔记本相比肯定是不对的，这姑且就是我的一些碎碎念吧。</p>
+<h2 id="接口和电量"><a href="#接口和电量" class="headerlink" title="接口和电量"></a>接口和电量</h2><p>左侧从转轴向内分别用上了全功能 USB-C、HDMI 2.0、USB 4.0 和极其先进（大声！）的 3.5mm 接口用于耳机耳麦，这个价位居然有 USB4.0，这不得不让人啧啧称奇。右侧两个 USB-A，标准的商务本的标配。不过目前我绝大部分的外设都是通过蓝牙连接，这些丰富的接口我一时间还用不上。</p>
+<p>续航方面还算不错，在开 windows 节能模式、配合笔记本的平衡模式，在最低亮度下同时用 edge,word,powerpoint,spotify 的情况下，两小时剩余电量 75%。不过，多次测验下来发现，这个电量还是有点迷，两小时使用，电量剩余大概是 60%~80% 之间波动，目前推测是电池的充电机制有关，平时插电使用时一般电池不会充满以保护电池，这对离电的续航可能有点影响。</p>
+<h2 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h2><p>一开始十分的纳闷为什么到手的机器内存只有 15.2GB，询问了一下客服，客服表示内存是 16GB，并且好像不打算解释，我想着反正价格摆在那里，稍稍用比较差的内存也无所谓了，大不了后边就换了这对内存。</p>
+<p>后来明白了显存可以通过 bios 调整，于是将将显存从 512MB 调整到了 4GB，看看可不可以换取更好的游戏性能。但是在调整好后打开任务管理器却发现内存只剩 11.7GB 了，这下才醒悟之前少的那些内存都拿去充当专用显存了。而专门设置成显存的内存不可以再当普通内存来用。那这个情况还不如走共享内存机制呢。🤣</p>
+<p>4GB 显存下任务管理器<br><img data-src="https://cdn.yuuu.org/post-img/10/1.webp" alt="1"><br><img data-src="https://cdn.yuuu.org/post-img/10/2.webp" alt="2"><br>512MB 显存下的任务管理器<br><img data-src="https://cdn.yuuu.org/post-img/10/3.webp" alt="3"><br><img data-src="https://cdn.yuuu.org/post-img/10/4.webp" alt="4"><br>可以看到，当设置 512MB 显存的时候，共享 GPU 内存会增加，当显存设置为 4GB 时，共享 GPU 内存反而会减少。这么看来，在平时使用的时候，显存是不会缺少的，没有必要的寻求大概也不需要去调整这个显存。</p>
+<h2 id="780M"><a href="#780M" class="headerlink" title="780M"></a>780M</h2><p>听各大评测中有提到，这颗核显相较于上一代又提升了多少多少，生产力又解放了多少多少。不过就我的体验而言，该用正经显卡的游戏还是要用正经显卡来玩，比如最近打折的 The Forest，780M 在较低画质情况下只能做到 30fps；但是在诸如泰拉瑞亚之类的性能开销比较低的游戏，780M 可以轻松跑满 120Hz。我上一次用核显打游戏还是用的 G1620 的 HD2500，那时候的核显玩 3D 游戏都是奢望，现如今的核显居然如此强悍，实在是令人称奇。</p>
+<p>不过我平时并没有特别依赖核显的环境，诸如图像视频处理之类的，780M 对于我来说只有玩游戏了，等日后有了新的使用体验我再加进这里吧。</p>
+<h2 id="念念碎"><a href="#念念碎" class="headerlink" title="念念碎"></a>念念碎</h2><p>我并不想像专业博主那样子来详细的去测试这个机器怎么怎么样，性能如何，能耗比如何，我只是想从一个正常的使用者来说说一台笔记本。以目前来看，这个笔记本完全可以满足我的目前的使用，那么我也就不多求什么了。</p>
+<p>最开始，我本是想买机械革命的极光 pro16，后来听说机械革命是 “小厂”、“质量不行”，于是又去看了一下大伙推荐的 “一线大厂” 的笔记本，但是又发现价格有点高，手中💰又有点紧缺，只好放弃。</p>
+<p>后来想了一下，平时玩的游戏大多不需要太高的配置，用电脑更多时候也不是在玩游戏，何必强求上一个游戏本呢？于是干脆把需求降为轻薄本，然后还是选择了机械革命这个 “小厂”，现在感觉这个决定还是不错的。😏</p>
+<h2 id="一些图片"><a href="#一些图片" class="headerlink" title="一些图片"></a>一些图片</h2><p><del>总感觉这些图片长宽比失调，看着好难受</del><br>笔记本外观：<br><img data-src="https://cdn.yuuu.org/post-img/10/5.webp" alt="5"><br><img data-src="https://cdn.yuuu.org/post-img/10/6.webp" alt="6"><br><img data-src="https://cdn.yuuu.org/post-img/10/7.webp" alt="7"><br><img data-src="https://cdn.yuuu.org/post-img/10/8.webp" alt="8"><br><img data-src="https://cdn.yuuu.org/post-img/10/9.webp" alt="9"><br><img data-src="https://cdn.yuuu.org/post-img/10/10.webp" alt="10"></p>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>多抓鱼之旅，买一本二手书</title>
     <url>/post/19178.html</url>
     <content><![CDATA[<p>前段时间在学校图书馆看到一本书，叫做《常识》，于 2009 年出版，由梁文道所著。<span id="more"></span>我个人感觉里面的内容还不错，想入手一本。但是图书馆不可以外借，而且那时的自己也要离开这个有图书馆的校园，这本《常识》也就没法再看了。本想着如今网购便利，实在不行就去到网上 “网淘” 一本回来，可这本书看上去好像是停止了印刷，在出版社” 广西师范大学出版社” 的淘宝店上没有找到，在出品方” 理想国” 的京东店上一直显示无货，而且评论也停留在 21 年。目前看来，官方渠道应该是买不到了。</p>
@@ -388,7 +417,7 @@
   <entry>
     <title>使用 gulp 对资源进行压缩</title>
     <url>/post/4800.html</url>
-    <content><![CDATA[<p>在 Web 前端开发工作中有很多 “重复工作”，比如压缩 CSS/JS 文件。而这些工作都是有规律的。找到这些规律，并编写 gulp 配置代码，让 gulp 自动执行这些 “重复工作”。– gulp-book<span id="more"></span></p>
+    <content><![CDATA[<p>在 Web 前端开发工作中有很多 “重复工作”，比如压缩 CSS/JS 文件。而这些工作都是有规律的。找到这些规律，并编写 gulp 配置代码，让 gulp 自动执行这些 “重复工作”。– form gulp-book<span id="more"></span></p>
 <h2 id="什么是gulp"><a href="#什么是gulp" class="headerlink" title="什么是gulp"></a>什么是 gulp</h2><p>Gulp 是一个流行的自动化构建工具，用于简化这些重复性的任务。Gulp 的核心思想是利用代码来自动化处理开发过程中的繁琐任务，从而提高开发效率和代码质量。<br>正如官网上所说:<br>“A toolkit to automate &amp; enhance your workflow”<br>“Leverage gulp and the flexibility of JavaScript to automate slow, repetitive workflows and compose them into efficient build pipelines.”</p>
 <p>而 Gulp 的强大之处在于它的插件生态系统。插件是用于处理特定任务的 JavaScript 模块。我们可以安装部分插件来使我们完成对博客静态资源的压缩。</p>
 <h2 id="安装gulp"><a href="#安装gulp" class="headerlink" title="安装gulp"></a>安装 gulp</h2><p>gulp 是基于 node.js 开发的，我们需要先安装 node.js 和 npm，npm 会在安装完 node.js 后自动安装。<br>安装完成后看看是否安装成功。</p>
@@ -408,7 +437,7 @@
 <figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">gulp</span><br><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure>
 
 <p>上图为 gulp 执行前后的文件大小对比图，其中 public 为未执行 gulp 指令，public-gulp 为执行 gulp 指令。<br>下图两者均去除字体文件和 images 文件夹后只对比 html,css,js 的大小。<br><img data-src="https://cdn.yuuu.org/post-img/9/1.webp" alt="1"><br><img data-src="https://cdn.yuuu.org/post-img/9/2.webp" alt="2"></p>
-<p>可以看出，在去除字体文件和 images 文件夹后，其他的文件压缩了大约 100kb 的大小 o_o ….。但是在网站中占大头的字体文件却是狠狠的压缩了，总算是不用担心网站打开速度被字体拖慢了。<br>尽管从上图看，字体的压缩看似是从 15MB 降低至了 8MB，但其实在 <code>tff2woff2</code> 所转化的字体文件夹中，会同时将 tff 转化为 .eot , .woff2 , .woff , .ttf , .svg 多个字体格式，从而做到各个网站的适配。而目前主流浏览器大多使用 woff2 格式，也就是说，我们打开网页的时候，大概率是使用 woff2 字体，如果不去适配 IE 和低版本浏览器，大概也可以再将字体文件删除。下边的代码块是只保留 woff2 字体删除其他字体的。<del>虽然没什么用，毕竟浏览器是按照样式表来下载字体的，多余的字体文件不会被下载，留在这里也没什么影响。</del></p>
+<p>可以看出，在去除字体文件和 images 文件夹后，其他的文件压缩了大约 100kb 的大小 o_o ….。但是在网站中占大头的字体文件却是狠狠的压缩了，总算是不用担心网站打开速度被字体拖慢了。<br>尽管从上图看，字体的压缩看似是从 15MB 降低至了 8MB，但其实在 <code>tff2woff2</code> 所转化的字体文件夹中，会同时将 tff 转化为 .eot , .woff2 , .woff , .ttf , .svg 多个字体格式，从而做到各个网站的适配。而目前主流浏览器大多使用 woff2 格式，也就是说，我们打开网页的时候，大概率是使用 woff2 字体，如果不去适配 IE 和低版本浏览器，大概也可以再将字体文件删除。下边的代码块是只保留 woff2 字体删除其他字体的。<del>虽然没什么用，毕竟浏览器是按照样式表来下载字体的，多余的字体文件不会被下载，留在这里也没什么影响。</del>。</p>
 <figure class="highlight js"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">'clean-files'</span>, <span class="keyword">function</span>(<span class="params"></span>) {</span><br><span class="line">  <span class="keyword">return</span> gulp.<span class="title function_">src</span>([</span><br><span class="line">    <span class="string">'./public/font'</span>,</span><br><span class="line">    <span class="string">'./public/images'</span>,</span><br><span class="line">    <span class="string">'./public/fonts/yourfont.eot'</span>,</span><br><span class="line">    <span class="string">'./public/fonts/yourfont.ttf'</span>,</span><br><span class="line">    <span class="string">'./public/fonts/yourfont.svg'</span>,</span><br><span class="line">    <span class="string">'./public/fonts/yourfont.woff'</span>,<span class="comment">// 看情况修改字体名字</span></span><br><span class="line">    ], { <span class="attr">read</span>: <span class="literal">false</span>, <span class="attr">allowEmpty</span>: <span class="literal">true</span> })</span><br><span class="line">    .<span class="title function_">pipe</span>(<span class="title function_">clean</span>());</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
 
 <p>附上一张不使用任何处理，只是用 ttf2woff2 处理字体后，输出文件夹字体占用大小截图，可以看到，svg 居然占到了丧心病狂的 4M，而 woff2 只有 699kb，<del>删了会清爽很多</del>。</p>
