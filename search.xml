@@ -66,7 +66,7 @@
   <entry>
     <title>使用了双拼一段时间之后</title>
     <url>/post/17812.html</url>
-    <content><![CDATA[<p>不知道又是从什么时候开始，双拼又开始被大家提及，亦或者说，每年都有一小段时间，双拼会被重新拿上台面来宣传。<span id="more"></span>大家都在说双拼输入「高效」、「键位合理」、「更适合打字工作者」。但是重新适应一个输入体系也让我也有点犹豫要不要真的开始，毕竟在学习的阶段，我的输入效率将会呈现断崖式的下降。</p>
+    <content><![CDATA[<p>不知道又是从什么时候开始，双拼又开始被大家提及，亦或者说，每年都有一小段时间，双拼会被重新拿上台面来宣传。<span id="more"></span>大家都在说双拼输入「高效」、「键位合理」、「更适合打字工作者」。每到这些时候，我都对这个所谓的可以提升输入效率的输入法感到心动。但是重新适应一个输入体系并不是一个容易的事情。而在学习的阶段，我的输入效率将会呈现断崖式的下降，最后恐怕是半途而废。</p>
 <h2 id="学习的契机"><a href="#学习的契机" class="headerlink" title="学习的契机"></a>学习的契机</h2><p>不过，随着我的生活与电脑、与文字输入的接触越来越多，我对输入的速度也有了要求。而全拼受限于我那僵硬的手指，几乎是没法进一步提升了。但是双拼可以只需输入两个按键就可以打出一个汉字，可以用相对于全拼更少的按击次数来输出与全拼相同的汉字，这个对我的吸引力还是挺大的。</p>
 <blockquote>
 <p><strong>双拼</strong>是<a href="https://zh.wikipedia.org/wiki/%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95" title="汉语拼音输入法">汉语拼音输入法</a>的一种编码方案。相对于<a href="https://zh.wikipedia.org/wiki/%E5%85%A8%E6%8B%BC" title="全拼">全拼</a>而言，使用双拼输入<a href="https://zh.wikipedia.org/wiki/%E6%B1%89%E5%AD%97" title="汉字">汉字</a>时只需输入一个代表<a href="https://zh.wikipedia.org/wiki/%E5%A3%B0%E6%AF%8D" title="声母">声母</a>的字母，一个代表<a href="https://zh.wikipedia.org/wiki/%E9%9F%B5%E6%AF%8D" title="韵母">韵母</a>的字母，就可以打出任意一个中文字了。 –wikipedia<br><img data-src="https://cdn.yuuu.org/post-img/12/4.webp" alt="4"></p>
@@ -205,6 +205,63 @@
 <blockquote>
 <p><a href="https://tldr.inbrowser.app/pages/common/ssh">ssh | tldr InBrowser.App</a><br><a href="https://zhuanlan.zhihu.com/p/57630633">ssh 命令的三种代理功能（-L/-R/-D）</a></p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>malloc 的微浅理解</title>
+    <url>/post/24530.html</url>
+    <content><![CDATA[<p>这段时间在学习数据结构。对数据结构中的 malloc 总是感到困惑，这几天查了资料，算是查清楚了 malloc 的用法，特此记录<span id="more"></span><br>在数据结构中，对结构体最开始分配空间的步骤是（以线性表为例）：</p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>{</span></span><br><span class="line">  ElemType data[MaxSize];<span class="comment">//`ElemType` 就是用来代替实际数据类型（如int）的一个占位符。</span></span><br><span class="line">  <span class="type">int</span> length;</span><br><span class="line">} SqList;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">CreateList</span><span class="params">(SqList *&amp;L, ElemType a[], <span class="type">int</span> n)</span>{ </span><br><span class="line">  L = (SqList *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(SqList));</span><br><span class="line">  <span class="keyword">while</span>(i&lt;n){</span><br><span class="line">    L -&gt; data[k]=a[i];</span><br><span class="line">    k++,i++;</span><br><span class="line">  }</span><br><span class="line">  L -&gt;length = k;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>在这段算法中，比较难理解的是这两行代码</p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">SqList *&amp;L;</span><br><span class="line"><span class="comment">//和</span></span><br><span class="line">L = (SqList *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(SqList));</span><br></pre></td></tr></tbody></table></figure>
+
+<p>前者代表的是对指针的引用，允许函数内部修改函数外部传入的指针本身，而不仅仅是修改指针所指向的值。后者是对指针所指向的地址进行动态内存分配。</p>
+<p>对于 <code>SqList *&amp;L</code>，<br><code>*</code> 用于指针前面时，它表示解引用操作，即获取指针所指向的值。例如，<code>int x = *ptr;</code> 表示将指针 <code>ptr</code> 指向的整数值赋给变量 <code>x</code>。<br><code>&amp;</code> 运算符：<code>&amp;</code> 运算符用于取地址操作。当 <code>&amp;</code> 用于变量前面时，它返回该变量的地址。例如，<code>int x = 10; int *ptr = &amp;x;</code> 将变量 <code>x</code> 的地址赋给指针 <code>ptr</code>。<br><code>*&amp;</code>：这个组合可以看作是将一个指针的引用。<code>*</code> 表示指针，而 <code>&amp;</code> 表示引用。所以 <code>*&amp;</code> 表示指针的引用。这在 C/C++ 中是合法的语法，允许在函数参数中传递指针的引用，以便在函数内部修改指针指向的地址。<br>因此，<code>SqList *&amp;L</code> 声明了一个指针 <code>L</code> 的引用，它指向一个 <code>SqList</code> 类型的对象</p>
+<p>我们在来讲讲 malloc。malloc 全称 memory allocation，在 cppference 中有写到 malloc 的功能。</p>
+<blockquote>
+<p>Allocates&nbsp;<code>size</code>&nbsp;bytes of uninitialized storage.<br>分配&nbsp;<code>size</code>&nbsp;字节的未初始化存储。<br>If allocation succeeds, returns a pointer that is suitably aligned for any object type with&nbsp;<a href="https://en.cppreference.com/w/c/language/object#Alignment" title="c/language/object">fundamental alignment</a>.<br>如果分配成功，则返回一个指针，该指针适合任何具有基本对齐方式的对象类型。<br>If&nbsp;<code>size</code>&nbsp;is zero, the behavior of&nbsp;<code>malloc</code>&nbsp;is implementation-defined. For example, a null pointer may be returned. Alternatively, a non-null pointer may be returned; but such a pointer should not be&nbsp;<a href="https://en.cppreference.com/w/c/language/operator_member_access" title="c/language/operator member access">dereferenced</a>, and should be passed to&nbsp;<a href="https://en.cppreference.com/w/c/memory/free" title="c/memory/free">free</a>&nbsp;to avoid memory leaks.<br>如果&nbsp;<code>size</code>&nbsp;为零，则&nbsp;<code>malloc</code>&nbsp;的行为是实现定义的。例如，可以返回空指针。或者，可以返回非空指针；但这样的指针不应该被取消引用，并且应该传递给 free 以避免内存泄漏。</p>
+</blockquote>
+<p>以下是 malloc（） 函数的声明。</p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="type">void</span> *<span class="title function_">malloc</span><span class="params">(<span class="type">size_t</span> size)</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>其中，<code>size_t</code> 是一个无符号整数类型，通常用于表示内存块的大小<br>在不同的平台上，<code>size_t</code> 的大小可能会有所不同，但它通常被设计为足以容纳系统中最大可能的对象大小。</p>
+<blockquote>
+<p><code>size_t</code>&nbsp;can store the maximum size of a theoretically possible object of any type (including array).</p>
+</blockquote>
+<p><code>void*</code> 是一个指针类型，表示指向未知类型的指针。这种类型的指针可以指向任何类型的数据，但不能直接对其进行解引用操作。</p>
+<p>所以我们需要将其转化，因此可以有</p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="type">int</span>* intPtr = (<span class="type">int</span>*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span>));</span><br></pre></td></tr></tbody></table></figure>
+
+<p>或者说，可以使用隐式转化</p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="type">int</span>* intPtr = <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span>));</span><br></pre></td></tr></tbody></table></figure>
+
+<p>此刻，一个内存空间就创立好了，那么，发生了什么事情？</p>
+<p>当执行 <code>int* intPtr = malloc(sizeof(int));</code> 这行代码时，发生了以下几件事情：</p>
+<ol>
+<li><p><strong><code>malloc</code> 分配内存</strong>：<code>malloc(sizeof(int))</code> 这部分是一个函数调用，它调用了 <code>malloc</code> 函数来分配一块内存空间，大小为 <code>sizeof(int)</code> 字节，也就是一个整数大小的内存块。<code>sizeof()</code> 是一个运算符，用于计算指定类型的大小。</p>
+</li>
+<li><p><strong>返回指针</strong>：<code>malloc</code> 函数返回一个指向新分配的内存块起始地址的指针。这个指针的类型是 <code>void*</code>，即指向未知类型的指针，需要转化。</p>
+</li>
+<li><p><strong>类型转换</strong>：在赋值语句 <code>int* intPtr = ...</code> 中，<code>void*</code> 类型的指针被隐式地转换为 <code>int*</code> 类型的指针。这是因为 <code>int*</code> 类型的指针可以指向整数类型的数据，而 <code>malloc</code> 返回的指针指向的是刚分配的内存块，大小为一个整数的大小。</p>
+</li>
+<li><p><strong>赋值给指针变量</strong>：分配的内存块的起始地址被赋值给了 <code>intPtr</code> 指针变量，使得 <code>intPtr</code> 指向了这块新分配的内存空间。</p>
+</li>
+</ol>
+<p>因此，<code>int* intPtr = malloc(sizeof(int));</code> 这行代码的作用是分配一块大小为一个整数大小的内存空间，并将其起始地址存储在 <code>intPtr</code> 指针变量中，以便后续使用。<br>当然，这个数字还可以通过 n 来拓展<br>cppference.com 也写出了关于它的用法和格式</p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span>   </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span> </span></span><br><span class="line">&nbsp;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span> </span><br><span class="line">{</span><br><span class="line">    <span class="type">int</span> *p1 = <span class="built_in">malloc</span>(<span class="number">4</span>*<span class="keyword">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">    <span class="comment">// allocates enough for an array of 4 int(为 4 个 int 的数组分配足够的空间)</span></span><br><span class="line">    </span><br><span class="line">    <span class="type">int</span> *p2 = <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span>[<span class="number">4</span>]));<span class="comment">//same, naming the type directly(一样，直接命名类型)</span></span><br><span class="line">    </span><br><span class="line">    <span class="type">int</span> *p3 = <span class="built_in">malloc</span>(<span class="number">4</span>*<span class="keyword">sizeof</span> *p3);<span class="comment">//same, without repeating the type name(相同，不重复类型名称)</span></span><br><span class="line">&nbsp;</span><br><span class="line">    <span class="keyword">if</span>(p1) {</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> n=<span class="number">0</span>; n&lt;<span class="number">4</span>; ++n) <span class="comment">// populate the array</span></span><br><span class="line">            p1[n] = n*n;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> n=<span class="number">0</span>; n&lt;<span class="number">4</span>; ++n) <span class="comment">// print it back out</span></span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"p1[%d] ==&nbsp;%d\n"</span>, n, p1[n]);</span><br><span class="line">    }</span><br><span class="line">&nbsp;</span><br><span class="line">    <span class="built_in">free</span>(p3);</span><br><span class="line">    <span class="built_in">free</span>(p3);</span><br><span class="line">    <span class="built_in">free</span>(p3);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>如有错误，还请指出，愿我们共同成长。</p>
+<p>参考资料:</p>
+<ul>
+<li><a href="https://en.cppreference.com/w/c/memory/malloc">cppreference.com</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>学习</category>
