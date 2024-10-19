@@ -15,8 +15,29 @@
     <atom:link href="https://yuuu.org/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>明日风回更好，今宵露宿何妨</description>
-    <pubDate>Sun, 21 Jul 2024 06:59:13 GMT</pubDate>
+    <pubDate>Wed, 16 Oct 2024 05:14:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>享受 -- 富桂糯糯茶</title>
+      <link>https://yuuu.org/post/52588.html</link>
+      <guid>https://yuuu.org/post/52588.html</guid>
+      <pubDate>Wed, 16 Oct 2024 05:14:16 GMT</pubDate>
+      
+      <description>&lt;p&gt;还是在 q 群中，有一条聊天记录评论道：「蜜雪冰城新出的富桂糯糯茶喝起来的味道就像是在对着小萝莉狂舔狂吸的感觉」。听到这里，我岂有不尝之理。</description>
+      
+      
+      
+      
+      <category domain="https://yuuu.org/categories/%E6%8E%A2%E7%B4%A2/">探索</category>
+      
+      
+      <category domain="https://yuuu.org/tags/%E6%8E%A2%E7%B4%A2/">探索</category>
+      
+      
+      <comments>https://yuuu.org/post/52588.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>一周年简记</title>
@@ -171,7 +192,7 @@
       <guid>https://yuuu.org/post/4800.html</guid>
       <pubDate>Thu, 24 Aug 2023 01:07:42 GMT</pubDate>
       
-      <description>&lt;p&gt;在 Web 前端开发工作中有很多 “重复工作”，比如压缩 CSS/JS 文件。而这些工作都是有规律的。找到这些规律，并编写 gulp 配置代码，让 gulp 自动执行这些 “重复工作”。– form gulp-book</description>
+      <description>&lt;p&gt;在 Web 前端开发工作中有很多 “重复工作”，比如压缩 CSS/JS 文件。而这些工作都是有规律的。找到这些规律，并编写 gulp 配置代码，让 gulp 自动执行这些 “重复工作”。-- form gulp-book</description>
       
       
       
@@ -297,7 +318,8 @@
       <guid>https://yuuu.org/post/25452.html</guid>
       <pubDate>Mon, 17 Jul 2023 10:21:49 GMT</pubDate>
       
-      <description>&lt;p&gt;本文尚未彻底完工，部分段落可能存在问题。&lt;br&gt;近日在平板上写作，平板上的搜狗输入法默认将 [] 转化为「」，看着很舒服，于是我便一直使用「」来代替 “” 的工作。</description>
+      <description>&lt;p&gt;本文尚未彻底完工，部分段落可能存在问题。&lt;br&gt;
+近日在平板上写作，平板上的搜狗输入法默认将 [] 转化为「」，看着很舒服，于是我便一直使用「」来代替 “” 的工作。</description>
       
       
       

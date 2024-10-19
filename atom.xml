@@ -6,7 +6,7 @@
   <link href="https://yuuu.org/atom.xml" rel="self"/>
   
   <link href="https://yuuu.org/"/>
-  <updated>2024-07-21T06:59:13.000Z</updated>
+  <updated>2024-10-16T05:14:16.000Z</updated>
   <id>https://yuuu.org/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>享受 -- 富桂糯糯茶</title>
+    <link href="https://yuuu.org/post/52588.html"/>
+    <id>https://yuuu.org/post/52588.html</id>
+    <published>2024-10-16T05:14:16.000Z</published>
+    <updated>2024-10-16T05:14:16.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;还是在 q 群中，有一条聊天记录评论道：「蜜雪冰城新出的富桂糯糯茶喝起来的味道就像是在对着小萝莉狂舔狂吸的感觉」。听到这里，我岂有不尝之理。</summary>
+    
+    
+    
+    <category term="探索" scheme="https://yuuu.org/categories/%E6%8E%A2%E7%B4%A2/"/>
+    
+    
+    <category term="探索" scheme="https://yuuu.org/tags/%E6%8E%A2%E7%B4%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>一周年简记</title>
@@ -157,7 +176,7 @@
     <updated>2023-08-24T01:07:42.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;在 Web 前端开发工作中有很多 “重复工作”，比如压缩 CSS/JS 文件。而这些工作都是有规律的。找到这些规律，并编写 gulp 配置代码，让 gulp 自动执行这些 “重复工作”。– form gulp-book</summary>
+    <summary type="html">&lt;p&gt;在 Web 前端开发工作中有很多 “重复工作”，比如压缩 CSS/JS 文件。而这些工作都是有规律的。找到这些规律，并编写 gulp 配置代码，让 gulp 自动执行这些 “重复工作”。-- form gulp-book</summary>
     
     
     
@@ -271,7 +290,8 @@
     <updated>2023-06-16T05:59:35.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;本文尚未彻底完工，部分段落可能存在问题。&lt;br&gt;近日在平板上写作，平板上的搜狗输入法默认将 [] 转化为「」，看着很舒服，于是我便一直使用「」来代替 “” 的工作。</summary>
+    <summary type="html">&lt;p&gt;本文尚未彻底完工，部分段落可能存在问题。&lt;br&gt;
+近日在平板上写作，平板上的搜狗输入法默认将 [] 转化为「」，看着很舒服，于是我便一直使用「」来代替 “” 的工作。</summary>
     
     
     
