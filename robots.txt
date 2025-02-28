@@ -1,0 +1,8 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /fonts
+Disallow: /search.xml
+
+Sitemap: https://yuuu.org/sitemap.xml
